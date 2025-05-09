@@ -7,3 +7,4 @@
 %% Вроде на иксах так запускать с гибридной графикой приложения на нвидиа %%
 `env NV_PRIME_RENDER_OFFLOAD=1 GLX_VENDOR_LIBRARY_NAME=nvidia <имя_приложения>`
 
+[[#]]
