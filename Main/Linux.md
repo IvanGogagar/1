@@ -10,3 +10,15 @@
 [[linux это кайф]]
 
 https://github.com/JaKooLit/Hyprland-v3?tab=readme-ov-file
+
+source = ~/.config/hypr/config/animations.conf
+source = ~/.config/hypr/config/autostart.conf
+source = ~/.config/hypr/config/decorations.conf
+source = ~/.config/hypr/config/environment.conf
+source = ~/.config/hypr/config/input.conf
+source = ~/.config/hypr/config/keybinds.conf
+source = ~/.config/hypr/config/monitor.conf
+source = ~/.config/hypr/config/variables.conf
+source = ~/.config/hypr/config/windowrules.conf
+source = ~/.config/hypr/config/user-config.conf
+source = ~/.config/hypr/config/defaults.conf
