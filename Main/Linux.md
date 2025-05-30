@@ -47,13 +47,13 @@ chainloader +1 — передаёт управление загрузчику Wi
 
 2. Сохрани и сделай GRUB-конфигурацию заново
 
-sudo grub-mkconfig -o /boot/grub/grub.cfg
+`sudo grub-mkconfig -o /boot/grub/grub.cfg`
 
 
 ---
 
 3. Перезагрузи и выбери Windows
 
-reboot
+`reboot`
 
 В меню GRUB должен появиться пункт "Windows (sda2)" — выбираешь его, и должна загрузиться Windows.
