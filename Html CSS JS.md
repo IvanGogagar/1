@@ -165,9 +165,35 @@ Translate(10px 10px)
 ```css
 button {
 	transition-property: background;
-	transition-duration: 0.3s
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-timing-function: cubic-bezier(0, 0, 0, 0);
 }
 ```
+
+```css
+@keyframes first {
+	from {
+		transform: translateX(0px);
+	}
+	
+	to {
+		transform: translateX(200px);
+	}
+}
+
+button {
+	animation-name: first;
+	animation-duration: 3s;
+	animation-timing-function: ease-in;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternative-reverse;
+}
+```
+
+
+
 
 
 # JavaScript
