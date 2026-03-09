@@ -112,5 +112,56 @@ console.log(person.name)
 person.greet
 ```
 
+### Delete
+
+```js
+delete person.langs
+```
 ## Замыкание
 
+```js
+function createMember(firstName) {
+	return function (lastName) {
+		console.log(firstName + " " + lastName)
+	}
+}
+
+const logWithLastName = createMember('John')
+logWithLastName('Doe')
+logWithLastName('Smith')
+
+``` 
+
+## Асинхронность
+
+```js
+setTimeout(() => {
+	console.log('hihi')
+}, 2000)
+```
+Очистка:
+```js
+const timeout =
+clearTimeout(timeout)
+```
+
+```js
+setInterval(() => {
+	console.log('hihi')
+}, 2000)
+```
+
+```js
+const delay = (wait = 1500) => {
+    const promise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve()
+    }, wait)
+    })
+    return promise
+}
+
+delay(2500).then(() => {
+    console.log('yep')
+})
+```
