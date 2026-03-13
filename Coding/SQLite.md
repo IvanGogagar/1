@@ -1,3 +1,14 @@
+### Создание базы
+
+```js
+db.prepare(`
+  CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY, 
+    mode TEXT DEFAULT 'textMode', 
+    authorized BOOLEAN DEFAULT false
+  )
+`).run();
+```
 ### Первая строка: Запись данных
 
 `db.prepare('REPLACE INTO users (id, mode) VALUES (?, ?)').run(id, mode);`
