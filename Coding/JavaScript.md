@@ -165,3 +165,5 @@ delay(2500).then(() => {
     console.log('yep')
 })
 ```
+
+# code-server --auth none
